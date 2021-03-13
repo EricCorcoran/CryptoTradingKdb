@@ -8,7 +8,7 @@
 - Trading on Coinbase Pro
 
 ## Binance
-#### Open realtime feed for one symbol
+#### Open realtime price stream for one symbol
 ```
 q)\l qBinanceStream.q
 q).binance.stream["btcusdt"]
@@ -110,7 +110,7 @@ q).binance.cancelAllOrders[]
 #### Open realtime price stream for all symbols
 
 ```
-q)\l qCoinbaseFeed.q
+q)\l qCoinbaseStream.q
 q).coinbase.stream[]
 q).coinbase.trades
 ex          sym      time                          price      size       
