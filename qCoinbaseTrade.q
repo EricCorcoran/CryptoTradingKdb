@@ -6,6 +6,7 @@
 \p 5010
 \c 1000 1000
 
+// Enter API credentials
 settings: `Host`Key`Secret`Passphrase!("https://api.pro.coinbase.com";"";"";""); 
 checkcreds:{$[.coinbase.settings[`Key]~""|.coinbase.settings[`Secret] ~""|.coinbase.settings[`Passphrase] ~""; show "***** Empty API Key, Secret or Passphrase value, please set in settings. *****";show "***** API Key, Secret and Passphrase set *****"]};
 checkcreds[]

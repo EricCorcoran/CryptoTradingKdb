@@ -2,16 +2,16 @@
 
 **q/kdb+ libraries for Binance and CoinbasePro API's** 
 
-- Realtime feed for Binance
+- Realtime streaming for Binance
 - Trading on Binance
-- Realtime feed for Coinbase Pro
+- Realtime streaming for Coinbase Pro
 - Trading on Coinbase Pro
 
 ## Binance
 #### Open realtime feed for one symbol
 ```
-q)\l qBinanceFeed.q
-q).binance.streamFeed["btcusdt"]
+q)\l qBinanceStream.q
+q).binance.stream["btcusdt"]
 q).binance.tradesym
 ex      sym     time                          price    size     
 ----------------------------------------------------------------
@@ -21,9 +21,9 @@ binance BTCUSDT 2021.02.19D12:13:18.008699000 54526.89 0.001282
 binance BTCUSDT 2021.02.19D12:13:18.008699000 54526.84 -0.0275   
 ```
 
-#### Open realtime feed for all symbols
+#### Open realtime price stream for all symbols
 ```
-q).binance.allStreamsFeed[]
+q).binance.allStreams[]
 q).binance.trades
 ex      sym         time                          price        size     
 ------------------------------------------------------------------------
@@ -34,7 +34,7 @@ binance BNBUSDT     2021.02.19D12:13:18.008699000 300.5127     66.206
 binance XLMUSDT     2021.02.19D12:13:18.008699000 0.51083      737      
 ```
 
-Other realtime feeds available for 
+Other realtime streams available for 
 - klines 
 - depth 
 - book ticker
@@ -107,11 +107,11 @@ q).binance.cancelAllOrders[]
 ```
 
 ## Coinbase Pro
-#### Open realtime feed for all symbols
+#### Open realtime price stream for all symbols
 
 ```
 q)\l qCoinbaseFeed.q
-q).coinbase.streamFeed[]
+q).coinbase.stream[]
 q).coinbase.trades
 ex          sym      time                          price      size       
 -------------------------------------------------------------------------

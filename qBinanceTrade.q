@@ -5,6 +5,7 @@
 \c 1000 1000
 \d .binance
 
+// Enter API credentials
 settings:`Host`Key`Secret!("https://api.binance.com";"";"") 
 //If there are any performance issues with accessing api.binance.com please try any of the following instead:
 //https://api1.binance.com/api/v3/*
