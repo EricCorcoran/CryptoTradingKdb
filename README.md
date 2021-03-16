@@ -2,13 +2,13 @@
 
 **q/kdb+ libraries for Binance and CoinbasePro API's** 
 
-- Realtime streaming for Binance
-- Trading on Binance
-- Realtime streaming for Coinbase Pro
-- Trading on Coinbase Pro
+- Binance Real-time Streaming
+- Binance Trading API
+- Coinbase Pro Real-time Streaming
+- Coinbase Pro Trading API
 
-## Binance
-#### Open realtime price stream for one symbol
+## Binance Real-time Streaming
+#### Open real-time price stream for one symbol
 ```
 q)\l qBinanceStream.q
 q).binance.stream["btcusdt"]
@@ -39,7 +39,7 @@ Other realtime streams available for
 - depth 
 - book ticker
 
-### Binance Trading
+### Binance Trading API
 
 Obtain Binance API credentials from https://www.binance.com/en/support/faq/360002502072-How-to-create-API
 
@@ -106,8 +106,8 @@ q).binance.orders["BTCUSDT"]
 q).binance.cancelAllOrders[]
 ```
 
-## Coinbase Pro
-#### Open realtime price stream for all symbols
+## Coinbase Pro Real-time Streaming
+#### Open real-time price stream for all symbols
 
 ```
 q)\l qCoinbaseStream.q
@@ -121,7 +121,7 @@ coinbasepro LINKGBP  2021.02.19D12:15:54.681617000 24.88888   5.88
 coinbasepro KNCUSD   2021.02.19D12:15:54.681617000 2.2206     44.1       
 coinbasepro BCHGBP   2021.02.19D12:15:54.681617000 512.17     -0.0317578 
 ```
-### CoinbasePro Trading
+### CoinbasePro Trading API
 
 Obtain CoinbasePro API credentials from https://docs.pro.coinbase.com/
 
