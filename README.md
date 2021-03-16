@@ -2,12 +2,12 @@
 
 **q/kdb+ libraries for Binance and CoinbasePro API's** 
 
-- Binance Real-time Streaming
+- Binance Real-Time Streaming
 - Binance Trading API
-- Coinbase Pro Real-time Streaming
+- Coinbase Pro Real-Time Streaming
 - Coinbase Pro Trading API
 
-## Binance Real-time Streaming
+## Binance Real-Time Streaming
 #### Open real-time price stream for one symbol
 ```
 q)\l qBinanceStream.q
@@ -21,7 +21,7 @@ binance BTCUSDT 2021.02.19D12:13:18.008699000 54526.89 0.001282
 binance BTCUSDT 2021.02.19D12:13:18.008699000 54526.84 -0.0275   
 ```
 
-#### Open realtime price stream for all symbols
+#### Open real-time price stream for all symbols
 ```
 q).binance.allStreams[]
 q).binance.trades
@@ -106,7 +106,7 @@ q).binance.orders["BTCUSDT"]
 q).binance.cancelAllOrders[]
 ```
 
-## Coinbase Pro Real-time Streaming
+## Coinbase Pro Real-Time Streaming
 #### Open real-time price stream for all symbols
 
 ```
